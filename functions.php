@@ -5,7 +5,7 @@ function theme_enqueue_styles() {
 
 // Custom Function to Include
 function favicon_link() {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="/rekryt/wp-content/themes/rekryt/resources/logo_minimal.png" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href=' . get_stylesheet_directory_uri() . '"resources/logo_minimal.png" />' . "\n";
 }
 add_action( 'wp_head', 'favicon_link' );
 }
